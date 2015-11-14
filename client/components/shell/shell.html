@@ -13,7 +13,17 @@
       
     </md-toolbar>
     <md-content layout-padding>
-
+      <md-item ng-repeat="item in menu">
+        <a>
+          <md-item-content md-ink-ripple layout="row" layout-align="start center">
+            <div class="inset">
+              <md-icon md-svg-icon="{{item.icon}}"></md-icon>
+            </div>
+            <div class="inset">{{item.title}}
+            </div>
+          </md-item-content>
+        </a>
+      </md-item>
     </md-content>
   </md-sidenav>
   <md-toolbar>

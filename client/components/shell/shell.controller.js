@@ -58,4 +58,22 @@ angular.module('hackathonApp')
         controller: 'DialogController'
       });
     };
+
+    $scope.menu = [
+      {
+        link : '',
+        title: 'Search',
+        icon: 'action:search'
+      },
+      {
+        link : '',
+        title: 'Book Clubs',
+        icon: 'action:book'
+      },
+      {
+        link : '',
+        title: 'Messages',
+        icon: 'communication:chat'
+      }
+    ];
   });

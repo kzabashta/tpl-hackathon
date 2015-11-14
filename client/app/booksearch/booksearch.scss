@@ -88,6 +88,11 @@
   color: #333 !important;
 }
 
+.small-book-title {
+  color: #333 !important;
+  font-size: 10px !important;
+}
+
 md-list-item {
   border-top: 1px solid #eee;
   padding-top: 10px !important;
@@ -99,4 +104,14 @@ md-list-item {
   padding-top: 5px !important;
   padding-bottom: 5px !important;
   margin: 0 5px;
+}
+
+img {
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
 }
