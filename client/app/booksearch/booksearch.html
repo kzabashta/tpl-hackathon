@@ -9,7 +9,7 @@
 			<md-list-item class="md-2-line contact-item selected" ng-repeat="book in books">
         <img ng-src="{{book.best_book[0].image_url[0]}}" class="md-avatar"/>
         <div class="md-list-item-text compact">
-          <p class="book-title">{{book.best_book[0].title[0]}}</p>
+          <a ui-sref="bookdetail({bookId: 1})"><p class="book-title">{{book.best_book[0].title[0]}}</p></a>
           <p>{{book.best_book[0].author[0].name[0]}}</p>
           <p>{{book.average_rating[0]}}/5 ({{book.ratings_count[0]._}} reviews)</p>
         </div>
