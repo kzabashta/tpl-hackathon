@@ -1,0 +1,5 @@
+<div ng-include="'components/shell/shell.html'"></div>
+<md-content flex="" layout-padding="">
+	<img ng-src="{{bookDetail.authors[0].author[0].image_url[0]._}}" class="md-avatar"/>
+	<p class="md-body-1" ng-bind-html="bookDetail.description[0]"></p>
+</md-content>
