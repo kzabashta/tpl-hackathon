@@ -18,6 +18,7 @@ function onConnect(socket) {
   });
 
   // Insert sockets below
+  require('../api/bookclub/bookclub.socket').register(socket);
   require('../api/booksearch/booksearch.socket').register(socket);
   require('../api/thing/thing.socket').register(socket);
 }

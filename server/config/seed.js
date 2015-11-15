@@ -7,6 +7,7 @@
 
 var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
+var BookClub = require('../api/bookclub/bookclub.model');
 
 Thing.find({}).remove(function() {
   Thing.create({
@@ -47,3 +48,27 @@ User.find({}).remove(function() {
     }
   );
 });
+
+BookClub.find({}).remove(function() {
+  BookClub.create({
+  profilePic: "http://www.tansleymethodist.com/site/wp-content/uploads/2013/01/Book-Club.png",
+  name: "North York Great Books Club",
+  info: "I've been wanting to start a general book club in North York for a while now! I have all sorts of tastes in books, because you never know what genre a good story is going to come out of! My favourite go-to books are young adult/children's, chick-lit, mystery, sci-fi, fantasy, travel, some classics, humour and anything popular. My vision for this club would be try a bit of everything, discuss book topics, and swap books and suggested reads! Some of my favourite authors are Rowling, Bryson, Montgomery, Jonasson, Tolkien, Snicket, Suskind, Rowell, Lowry, to name a few. If this sounds like your reading tastes, then feel free to join the group and read the next monthís book. I will try to update a few months in advance to give you time to read the books. Iíll also try to pick books that are available at the library, or easily bought second-hand!",
+  location: "Toronto",
+  currentBook: {
+    bookId: "168668"
+  },
+  pastBooks: ["34", "35234", "589"],
+  meetUpLink: "http://www.meetup.com/North-York-Great-Books-Club/",
+  nextEvent: {
+    eventName: "Discussion and beer",
+    eventDescription: "Let's discuss this amazing book over a pint or few",
+    eventTime: "November 20th, 2015",
+    eventLocation: "Awesome Pub"
+  }}, 
+  function() {
+      console.log('finished populating book clubs');
+    }
+  );
+});
+

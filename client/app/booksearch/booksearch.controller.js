@@ -30,7 +30,7 @@ angular.module('hackathonApp')
             '</md-content>' +
             '  <div class="md-actions">' +
             '    <md-button ng-click="closeDialog()">' +
-            '      Hold' +
+            '     Place Hold' +
             '    </md-button>' +
             '    <md-button ng-click="closeDialog()">' +
             '      Close' +
