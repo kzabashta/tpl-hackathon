@@ -58,14 +58,30 @@ BookClub.find({}).remove(function() {
   currentBook: {
     bookId: "168668"
   },
-  pastBooks: ["34", "35234", "589"],
+  pastBooks: ["34", "35234", "218659", "261441"],
   meetUpLink: "http://www.meetup.com/North-York-Great-Books-Club/",
   nextEvent: {
-    eventName: "Discussion and beer",
-    eventDescription: "Let's discuss this amazing book over a pint or few",
+    eventName: "Discuss the ending of Catch-22",
+    eventDescription: "Now that we have all finished reading this book, let's discuss in detail.",
     eventTime: "November 20th, 2015",
-    eventLocation: "Awesome Pub"
+    eventLocation: "North York Center Library"
   }}, 
+{
+  profilePic: "http://www.caledon.library.on.ca/images/children-banner.png",
+  name: "Children Book Club",
+  info: "This is a children only book club for ages 12-18",
+  location: "Toronto",
+  currentBook: {
+    bookId: "9349915"
+  },
+  pastBooks: ["13273621", "7812107", "303197", "7075298", "6357708"],
+  meetUpLink: "http://www.meetup.com/North-York-Great-Books-Club/",
+  nextEvent: {
+    eventName: "Red riding hood dicussion",
+    eventDescription: "Let's meet at NYC library to discuss this book",
+    eventTime: "November 20th, 2015",
+    eventLocation: "North York Center Library"
+  }},
   function() {
       console.log('finished populating book clubs');
     }

@@ -4,7 +4,7 @@ angular.module('hackathonApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('booksearch', {
-        url: '/',
+        url: '/booksearch',
         templateUrl: 'app/booksearch/booksearch.html',
         controller: 'BooksearchCtrl'
       });

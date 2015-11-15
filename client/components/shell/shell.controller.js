@@ -61,17 +61,17 @@ angular.module('hackathonApp')
 
     $scope.menu = [
       {
-        link : '',
+        link : '/booksearch',
         title: 'Search',
         icon: 'action:search'
       },
       {
-        link : '',
+        link : '/',
         title: 'Book Clubs',
         icon: 'action:book'
       },
       {
-        link : '',
+        link : '/messages',
         title: 'Messages',
         icon: 'communication:chat'
       }
