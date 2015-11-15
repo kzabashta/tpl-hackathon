@@ -9,11 +9,13 @@ angular.module('hackathonApp')
             '<md-dialog>' +
             '  <md-content style="overflow: scroll;" class="book-detail">'+
             '<div class="md-title" layout="row" layout-align="center center">{{bookDetail.title[0]}}</div>' +
-            '<img ng-src="{{bookDetail.image_url[0]}}" class="md-avatar"/>' +
+            '<img ng-src="{{bookDetail.image_url[0]}}" class="img-wrap"/>' +
             '  <div class="md-body-2">Author</div>' +
             '<div class="md-caption" ng-bind-html="bookDetail.authors[0].author[0].name[0]"></div>' +
             '  <div class="md-body-2">Description</div>' +
             '  <div class="md-caption" ng-bind-html="bookDetail.description[0]"></div>' +
+            '  <div class="md-body-2">Branch Availability</div>' +
+            '<img src="/assets/images/map.png">' +
             '  <div class="md-body-2">Similar Books</div>' +
             '<md-list class="fixedRows">' +
                 '<md-list-item class="md-2-line contact-item selected" ng-repeat="book in bookDetail.similar_books[0].book" ng-click="showBookDetails($event, book.id[0])">' +
